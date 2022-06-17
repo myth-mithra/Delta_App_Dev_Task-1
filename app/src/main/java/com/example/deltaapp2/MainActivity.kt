@@ -175,31 +175,31 @@ class MainActivity : AppCompatActivity() {
                 val division=btn30.text.toString().toInt() / btn31.text.toString().toInt()
                 val addition2=btn40.text.toString().toInt() + btn41.text.toString().toInt()
                 if (addition==txt02.text.toString().toInt()){
-                    score+=1
+                    score+=2
                 }
                 if (subract==txt12.text.toString().toInt()){
-                    score+=1
+                    score+=2
                 }
                 if (multiply==txt22.text.toString().toInt()){
-                    score+=1
+                    score+=2
                 }
                 if (division==txt32.text.toString().toInt()){
-                    score+=1
+                    score+=2
                 }
                 if (addition2==txt42.text.toString().toInt()){
-                    score+=1
+                    score+=2
                 }
                 if (score>highscore){
                     highscore=score
                 }
-                if (score == 5) {
-                    Toast.makeText(this, "Great job!", Toast.LENGTH_LONG).show()
+                if (score == 10) {
+                    Toast.makeText(this, "congratulations,u have got full marks!", Toast.LENGTH_LONG).show()
                     numbers(0, list1 as List<Int>)
                 }
                 else if (lives > 1) {
                     Toast.makeText(
                         this,
-                        "Try Again.\nYour highScore = $highscore",
+                        "please try again.\nYour highScore right now is = $highscore",
                         Toast.LENGTH_LONG
                     ).show()
                     lives--

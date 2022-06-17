@@ -101,18 +101,18 @@
                 android:layout_marginBottom="10dp"
                 android:padding="20dp"/>
 
+
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="="
-                android:layout_margin="2dp"
-                android:textSize="20sp"
                 android:padding="10dp"
-                android:layout_marginBottom="10dp"/>
-
+                android:text="="
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -410,13 +410,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FBED6A"
-                android:text="SUBMIT" />
+                android:text="SUBMIT"
+                android:layout_marginLeft="120dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="lives remaining=3" />
+                android:text="lives remaining=3"
+                android:layout_marginLeft="120dp"
+                android:textSize="20sp"
+                android:padding="10dp"/>
         </TableRow>
 
     </TableLayout>
